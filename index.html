@@ -110,7 +110,7 @@
     <main>
         <div class="img-slide">
             <div class="col">
-                <div class="arrow-left">
+                <button class="arrow-left">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
                         viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
@@ -120,19 +120,21 @@
                             </g>
                         </g>
                     </svg>
-                </div>
+                </button>
             </div>
             <div class="row">
                 <div class="images">
                     <div class="carosel">
-                        <img src="img/img1.jpg" alt="image 1">
-                        <img src="img/img2.jpg" alt="image 2">
-                        <img src="img/img3.jpg" alt="image 3">
+                        <img src="img/img3.jpg" alt="image 3" class="slideImg" id="lastClone">
+                        <img src="img/img1.jpg" alt="image 1" class="slideImg">
+                        <img src="img/img2.jpg" alt="image 2" class="slideImg">
+                        <img src="img/img3.jpg" alt="image 3" class="slideImg">
+                        <img src="img/img1.jpg" alt="image 1" class="slideImg" id="firstClone">
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="arrow-right">
+                <button class="arrow-right">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
                         viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
@@ -142,7 +144,7 @@
                             </g>
                         </g>
                     </svg>
-                </div>
+                </button>
             </div>
         </div>
 
@@ -600,7 +602,7 @@
 
             <div class="img-slide">
                 <div class="col">
-                    <div class="arrow-left">
+                    <button class="arrow-left">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
                             viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
@@ -610,11 +612,23 @@
                                 </g>
                             </g>
                         </svg>
-                    </div>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="images">
                         <div class="carosel">
+                            <div class="box box3" id="lastClone">
+                                <img src="img/icon3.svg">
+                                <div class="box-text">
+                                    <h3>Handful of Gold</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit,sed do eiusmod tempum.
+                                    </p>
+                                    <button>$4.99</button>
+                                </div>
+                            </div>
+
                             <div class="box box1">
                                 <img src="img/icon1.svg">
                                 <div class="box-text">
@@ -648,11 +662,23 @@
                                     <button>$4.99</button>
                                 </div>
                             </div>
+
+                            <div class="box box1" id="firstClone">
+                                <img src="img/icon1.svg">
+                                <div class="box-text">
+                                    <h3>Handful of Gold</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit,sed do eiusmod tempum.
+                                    </p>
+                                    <button>$4.99</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="arrow-right">
+                    <button class="arrow-right">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px"
                             viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
@@ -663,7 +689,7 @@
                                 </g>
                             </g>
                         </svg>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -947,6 +973,8 @@
         </div>
         <div class="copyright">2019 Electronic Arts Inc</div>
     </footer>
+
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

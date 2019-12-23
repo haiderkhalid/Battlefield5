@@ -208,14 +208,20 @@ header .rating-and-age .age span:last-child {
 .img-slide .arrow-left,
 .img-slide .arrow-right {
   background-color: #2e2e2e;
-  padding: 1.5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   position: absolute;
+  z-index: 99;
   -webkit-transition: all .5s;
   transition: all .5s;
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px rgba(46, 46, 46, 0.5);
           box-shadow: 0 0 10px rgba(46, 46, 46, 0.5);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .img-slide .arrow-left svg,
@@ -223,11 +229,22 @@ header .rating-and-age .age span:last-child {
   width: 2.5rem;
   height: 2.5rem;
   fill: #f1f2f6;
+  margin: auto;
 }
 
 .img-slide .arrow-left:hover,
 .img-slide .arrow-right:hover {
   background-color: #222;
+}
+
+.img-slide .arrow-left:focus,
+.img-slide .arrow-right:focus {
+  outline: none;
+}
+
+.img-slide .arrow-left::-moz-focus-inner,
+.img-slide .arrow-right::-moz-focus-inner {
+  border: 0;
 }
 
 .img-slide .arrow-left {
@@ -262,7 +279,7 @@ header .rating-and-age .age span:last-child {
   display: flex;
 }
 
-.img-slide .images img {
+.img-slide .images .slideImg {
   width: 50rem;
   margin-right: 4rem;
   border-radius: 20px;

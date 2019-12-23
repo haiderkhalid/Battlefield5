@@ -197,21 +197,35 @@ header {
     .arrow-left,
     .arrow-right {
         background-color: $color-black;
-        padding: 1.5rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
         position: absolute;
+        z-index: 99;
         transition: all .5s;
         cursor: pointer;
         box-shadow: 0 0 10px rgba($color-black, .5);
+        border: none;
+
+        display: flex;
 
         svg {
             width: 2.5rem;
             height: 2.5rem;
             fill: $color-white;
+            margin: auto;
         }
 
         &:hover {
             background-color: #222;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-moz-focus-inner {
+            border: 0;
         }
     }
 
@@ -239,7 +253,7 @@ header {
             display: flex;
         }
 
-        img {
+        .slideImg {
             width: 50rem;
             margin-right: 4rem;
             border-radius: 20px;
